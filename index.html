@@ -10,7 +10,6 @@
   </head>
 
   <body>
-    <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
     <div class="page">
     <header class="header">
       <nav class="nav">
@@ -19,22 +18,21 @@
           alt="Practicum Library Logo"
           class="logo"
         />
-        <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
         <ul class="nav__links">
           <li>
-            <a class="nav__link">Staff picks</a>
+            <a href="#Staff-picks" class="nav__link">Staff picks</a>
           </li>
           <li>
-            <a class="nav__link">Events</a>
+            <a href="#Events" class="nav__link">Events</a>
           </li>
           <li>
-            <a class="nav__link">Become a member</a>
+            <a href="#Become-a-member" class="nav__link">Become a member</a>
           </li>
           <li>
-            <a class="nav__link">About</a>
+            <a href="#About" class="nav__link">About</a>
           </li>
           <li>
-            <a class="nav__link">Contacts</a>
+            <a href="#Contacts" class="nav__link">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -50,13 +48,13 @@
         class="header__image"
       />
       <div class="header__footer">
-        <a class="header__link">About the library &darr;</a>
+        <a href="#About" class="header__link">About the library &darr;</a>
         <p class="header__address">200 Success Avenue, The Town of Practicum</p>
       </div>
     </header>
 
     <main class="content">
-      <section class="events">
+      <section id="Events" class="events">
       <div class="events__content">
           <h2 class="events__heading">Upcoming events:</h2>
           <h3 class="events__title">
@@ -111,26 +109,18 @@
                 </div>
                </div>
       </section>
-      <section class="staff">
-        <!--------------------------------------------------------------------->
-        <!--        Don't uncomment until the final project stage            -->
-        <!--------------------------------------------------------------------->
-        <!--<h2 class="staff__title">Staff picks</h2>
+      <section id="Staff-picks" class="staff">
+       <h2 class="staff__title">Reader picks</h2>
         <p class="staff__subtitle">That our readers love</p>
-        <ul>
+        <ul class="staff__list">
           <li class="card">
             <div class="card__content">
-              <h3 class="card__title">Introduction to Algorithms</h3>
+              <h3 class="card__title">Harry Potter and The Order of The Phoenix</h3>
               <p class="card__text">
-                The name of this book is self-explanatory; it's a proper
-                introduction to algorithms! Introduction to Algorithms, or CLRS,
-                in reference to the authors' last names, goes in-depth and
-                covers a range of algorithms across several self-contained
-                chapters.
+                In this installment of the Harry Potter series, the character really starts to face life or death situations now that voldemort has returned. Harry's struggles get really complicated because he and Dumbledore are seemingly the only people that believe Voldemort has actually returned.  Harry also explores some very real feelings for Choe which makes his personal very complicated along with teaching his peers how to defend themselves against very real threats. It is one of the more exciting installments in the series.
               </p>
               <p class="card__footer">
-                Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
-                Clifford Stein
+                J.K. Rowling
               </p>
             </div>
           </li>
@@ -138,16 +128,13 @@
           <li class="card">
             <div class="card__content">
               <h3 class="card__title">
-                The Structure and Interpretation of Computer Programs (SICP)
+                Harry Potter and The Half Blood Prince
               </h3>
               <p class="card__text">
-                This is one of the best books for learning the fundamentals of
-                programming. Featured by MIT in one of their foundational
-                programming courses, SICP is a general-purpose programming book
-                that uses Scheme to illustrate various programming concepts.
+                In this book, Harry is tasked with finding some crucial information from the new defense against the dark arts teacher in order to defeat Voldemort for good.  Dumbeldore starts to unveil to Harry the enormity of the task before him and even takes Harry along to destroy one of the dreaded horcruxes that allows Voldemort to resurrect himself.  Voldemort himself begins to build his army to it's former glory and enlists Draco Malffoy to be Dumbeldores executioner.  The book ending with the death of the beloved headmaster was probably one of the most earth shattering events that shook all Harry Potter fans to their core.
               </p>
               <p class="card__footer">
-                Harold Abelson, Gerald Jay Sussman, Julie Sussman
+                David Yates
               </p>
             </div>
           </li>
@@ -155,42 +142,31 @@
           <li class="card">
             <div class="card__content">
               <h3 class="card__title">
-                The Clean Coder: A Code of Conduct for Professional Programmers
+                Harry Potter and The Deathly Hallows
               </h3>
               <p class="card__text">
-                Compiled by seasoned software engineer and author Robert C.
-                Martin (also known as Uncle Bob), this book covers the
-                techniques and tools of true software craftsmanship. It explains
-                how to write clean code and demonstrates how to cultivate the
-                attitude of a skilled, professional programmer.
+                This installment of the series was the only time I ever went to a book opening in Barnes and Noble.  I waited in a fairly long line to purchase this long awaited conclusion to the series.  This book brought about so many questions for Harry Potter since he was essentially on his own to find the remaining horcruxes with only Ron and Hermoine to accompany him.  There were so many questions ranging from what were the remaining horcruxes to how on earth were they going to be able to destroy if they were able to find them.  I had to read the book a couple of times to truly take in all the amazing plot twists and mysteries that had to be solved in order for Harry to live.  I think my most treasured memory was reading the part where Harry went into the forest to confront Voldemort and was able to speak with his family by utilizing the resurrection stone.  I truly appreciate how the author wrapped up the iconic series.
+
               </p>
-              <p class="card__footer">Steve McConnell</p>
+              <p class="card__footer">J.K. Rowling</p>
             </div>
           </li>
 
           <li class="card">
             <div class="card__content">
               <h3 class="card__title">
-                Code Complete: A Practical Handbook of Software Construction
+                The Wheel of Time (The Eye of the World)
               </h3>
               <p class="card__text">
-                Want to know how to write robust code irrespective of the
-                architecture behind your chosen programming language? Then
-                consider reading Code Complete: A Practical Handbook of Software
-                Construction. It comprehensively covers everything related to
-                good code structure.
+                After finishing the Harry Potter series, this new fantasy book was recommended to me by a close friend.  This book series revolved around a few characters who all came from the same village.  In this world, women are the all knowing sorcerers who use a special power that allows them to perform magic.  Men do have access to this one power but become mad through it's use because the dragon infected it a long time ago.  The Dragon was a supreme male sorcerer who was prophesized to either break the world or save it.  Although this mythical sorcerer had passed long ago, it was said that he would be resurrected once more and the world would be in peril with his coming.  Rand Al Thor is this resurrected master sorcerer and the story follows him and his friends as they navigate a fast changing world.
               </p>
-              <p class="card__footer">Steve McConnell</p>
+              <p class="card__footer">Robert Jordan</p>
             </div>
           </li>
-        </ul>-->
+      </ul>
       </section>
-
-      <section class="membership">
-        <!--------------------------------------------------------------------->
-        <!--         Don't uncomment until the final project stage           -->
-        <!--------------------------------------------------------------------->
-        <!--<h2 class="membership__title">Becoming a library member is easy!</h2>
+      <section id="Become-a-member" class="membership">
+      <h2 class="membership__title">Becoming a library member is easy!</h2>
         <ul class="membership__steps">
           <li class="step">
             <h3 class="step__title">
@@ -242,14 +218,11 @@
               Enjoy all the awesome benefits of membership!
             </p>
           </li>
-        </ul>-->
+        </ul>
       </section>
 
-      <section class="about">
-        <!--------------------------------------------------------------------->
-        <!--          Don't uncomment until the final project stage          -->
-        <!--------------------------------------------------------------------->
-        <!--<h2 class="about__title">About the library</h2>
+      <section id="About" class="about">
+        <h2 class="about__title">About the library</h2>
         <div class="about__content">
           <p class="about__paragraph">
             Libraries are essential establishments in practically every city,
@@ -269,13 +242,40 @@
             the American Geophysical Union.
           </p>
         </div>
-        <div class="about__circle"></div> -->
+        <div class="about__circle"></div>
       </section>
     </main>
-    <footer class="footer">
-      <!-- -------------------------------------------------------------------->
-      <!--          Don't uncomment until the final project stage            -->
-      <!-- -------------------------------------------------------------------->
+    <footer id="Contacts" class="footer">
+      <div class="footer__columns">
+      <div class="footer__column footer__logo">
+        <img src="./images/logo_white.png" alt="logo" class="footer__logo">
+      </div>
+      <div class="footer__column footer__column_content_hours">
+        <h4 class="footer__column-heading">Hours</h4>
+        <ul class="footer__list">
+          <li class="footer__list-item">Weekdays: 9am-8pm</li>
+          <li class="footer__list-item">Weekend: 10am-6pm</li>
+        </ul>
+      </div>
+      <div class="footer__column footer__column_content_social">
+        <h4 class="footer__column-heading">Social media</h4>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#" class="footer__column-link ">
+              <img class="footer___social-icon" src="./images/facebook_white.svg" alt="Facebook icon" >
+              Facebook
+              </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__column-link ">
+              <img class="footer___social-icon" src="./images/instagram_white.svg" alt="Instagram icon">
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copyright">@2023 Dararat Bishop</p>
+    </div>
     </footer>
     </div>
   </body>
